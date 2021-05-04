@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lampada</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <title>LAMPADA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js" defer></script>
 </head>
 <body>
+    <div class="container">
     <header>
-        <h1>Lampada</h1>
+        <div class="card card-header">
+            <h2>LAMPADA</h2>
+        </div>
     </header>
     <main>
         <div>
-            <img src="./img/lamp_b.jpg" alt="Lampada Desligada" id="lamp">
+            <img src="./img/apagada.jpg" alt="Lampada apagada" id="lamp">
         </div>
-        <div>
-            <button id="turnOn">Acender</button><button id="turnOff">Apagar</button>
+        <div class="card-footer" >
+            <button class="btn btn-warning" id="turnOn">Acender a Luz!</button> | 
+            <button class="btn btn-dark" id="turnOff">Apagar a Luz!</button>
+            <hr>
+            <button class="btn btn-outline-danger" onClick="window.location.reload();">TROCAR LAMPADA</button>
         </div>
+    </div>
     </main>
 </body>
 </html>
