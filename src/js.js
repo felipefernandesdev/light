@@ -19,4 +19,4 @@ function lampadaQuebrando(){
 };
 turnOn.addEventListener('click', lampadaLigada);
 turnOff.addEventListener('click', lampadaDesligada);
-lamp.addEventListener('click', lampadaQuebrando);
+lamp.addEventListener('dblclick', lampadaQuebrando);
